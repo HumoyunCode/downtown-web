@@ -1,4 +1,6 @@
 /* GLOBAL */
+
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -24,10 +26,10 @@ body {
   color: #222;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 
 /* AUTOFILL-STYLES */
@@ -84,6 +86,160 @@ select:-webkit-autofill:focus {
 .main-content {
   flex-grow: 1;
 }
+
+/* Downtown css */
+
+.header-main {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  background-color: #ffffff;
+  background: red;
+}
+
+.main-section {
+
+}
+
+.side-bar__part {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.side-bar__icon i{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.side-bar__name {
+  width: 100%;
+  max-width: 120px;
+  display: flex;
+}
+
+.side-bar__name span{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1px;
+  font-family: sans-serif;
+  color: #ffc001;
+  margin: auto 0;
+}
+
+.nav-contact {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-contact__page {
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: blue;
+}
+
+.nav-contact__page-media i {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-contact__page-media a{
+  text-decoration: none;
+  color: #e3e3e3;
+}
+
+.nav-contact__page-author img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-contact__page-author span{
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 1px;
+  font-family: sans-serif;
+  color: #e3e3e3;
+  margin-left: 20px;
+}
+
+.main-sidebar {
+}
+
+.main-ielts__section {
+}
+
+
+
+.main-sidebar__activities {
+}
+
+.test-area {
+}
+
+.fa-solid.fa-bars {
+}
+
+
+.main-sidebar__practice {
+}
+
+.main-sidebar__statistic {
+}
+
+.test-area_listening {
+}
+
+.test-area_reading {
+}
+
+.test-area_writing {
+}
+
+.test-area_speaking {
+}
+
+.fa-brands.fa-telegram {
+}
+
+.main-sidebar_reading {
+}
+
+.main-sidebar_listening {
+}
+
+.main-sidebar_writing {
+}
+
+.main-sidebar_speaking {
+}
+
+.main-sidebar-statistic_reading {
+}
+
+.main-sidebar-statistic_listening {
+}
+
+.main-sidebar-statistic_writing {
+}
+
+.main-sidebar-statistic_speaking {
+}
+
+
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),

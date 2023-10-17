@@ -43,8 +43,53 @@ body {
   flex-grow: 1;
 }
 
+/* animation of hamburger menue */
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: #e3e3e3;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
 /* Downtown css */
 
+/* Header section  */
 .header-main {
   width: 100%;
   height: 270px;
@@ -52,30 +97,23 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-  background: red;
-}
-
-.main-section {
-width: 100%;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: #f7f7f7;
+  border-bottom: 1px solid grey;
 }
 
 .side-bar__part {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
   height: auto;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
 
-.side-bar__icon i{
-  font-size: 18px;
-  font-weight: 600;
+.side-bar__icon {
+ width: 70px;
+ height: 70px;
+ display: grid;
+ place-items: center;
 }
 
 .side-bar__name {
@@ -85,29 +123,21 @@ background-color: #f7f7f7;
 }
 
 .side-bar__name span{
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 1px;
+  line-height: 2px;
   font-family: sans-serif;
   color: #ffc001;
   margin: auto 0;
-}
-
-.nav-contact {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
+  letter-spacing: 1px;
 }
 
 .nav-contact__page {
-  max-width: 350px;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  background-color: blue;
 }
 
 .nav-contact__page-media i {
@@ -118,22 +148,43 @@ background-color: #f7f7f7;
 .nav-contact__page-media a{
   text-decoration: none;
   color: #e3e3e3;
+  margin-right: 20px;
+}
+
+.nav-contact__page-author{
+  display: flex;
+  align-items: center;
+  width: 350px;
+  display: flex;
 }
 
 .nav-contact__page-author img{
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-left: 10px;
 }
 
 .nav-contact__page-author span{
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 200;
   line-height: 1px;
   font-family: sans-serif;
   color: #e3e3e3;
   margin-left: 20px;
 }
+
+
+/* main section this section contains all parts of practice */
+.main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
+  
 
 .main-sidebar {
   width: 23%;
@@ -168,6 +219,26 @@ background-color: #f7f7f7;
   align-items: center;
   justify-content: center;
   border: 1px solid grey;
+}
+
+.card{
+  width: 100%;
+  max-width: 900px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid grey;
+  margin: 10px;
+  cursor: pointer;
+}
+.card span{
+  font-size: 30px;
+  font-weight: 500;
+  color: #7f7f7f;
+  font-family: sans-serif;
+  margin-left: 20px;
 }
 
 .main-sidebar__activities {

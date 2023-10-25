@@ -50,7 +50,7 @@
   <!-- Main section it contains all main parts -->
   <main class="main-section">
   <!-- side bar it contains tests  and statistics -->
-    <div id="close_toggle" class="main-sidebar">
+    <div class="main-sidebar close_toggle" style="height: 85vh;">
       
       <div class="sidebar-2">
         <ul class="sidebar-2_menu ">
@@ -60,46 +60,96 @@
           </li>
 
           <li>
-            <img src="./image/profile_setings.jpg" alt="">
+            <img src="/image/profile_setings.jpg" alt="">
             <a href="#">Profile</a>
           </li>
 
           <li>
-            <img src="./image/statistics.jpg" alt="">
+            <img src="/image/statistics.jpg" alt="">
             <a href="#">Statistics</a>
           </li>
 
           <li>
-            <img src="./image/blog.jpg" alt="">
+            <img src="/image/blog.jpg" alt="">
             <a href="#">Blog</a>
           </li>
 
           <div class="registration">
-            <a href="#">Sign in</a> 
-            <span>/</span>
-            <a href="#">Register</a>
+            <a class="registerBtn">Register / Sign in</a>
           </div>
         </ul>
       </div>
     </div>
     </div>
 
-    <!--This is ielts section area it contains all ielts sections like listening reading writing and speaking  -->
+   <!--This is ielts section area it contains all ielts sections like listening reading writing and speaking  -->
     <div class="registration_area">
-        <form class="signInForm">
-            <span>Sign in</span>
-            <div class="signIn">
-                <label for="user">Username</label>
-                <input type="text" placeholder="Enter your Username" required>
-                <label for="password">Password</label>
-                <input type="password" placeholder="********" required>
-                <button onclick="SubmitEvent"> <img src="/image/register.jpg" width="80" height="80"></button>
-            </div>
-        </form>
+      <form class="signInForm">
+         <span>Sign in</span>
+          <div class="signIn">
+            <label for="user">Username</label>
+            <input type="text" placeholder="Enter your Username" required>
+            <label for="password">Password</label>
+            <input type="password" placeholder="********" required>
+            <button onclick="SubmitEvent"> <img src="/image/register.jpg" width="80" height="80"></button>
+          </div>
+      </form>
+
+      <form class="registerForm close_toggle">
+        <div class="registerTitle">Register</div>
+        <div class="flex">
+          <div>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your Username" required>
+          </div>
+
+          <div>
+          <label for="user">Username</label>
+          <input type="text" placeholder="Enter your Username" required>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div>
+          <label for="password">Password</label>
+          <input type="password" placeholder="********" required>
+          </div>
+
+          <div>
+          <label for="password">Repeat password</label>
+          <input type="password" placeholder="********" required>
+          </div>
+        </div>
+        
+        <button onclick="SubmitEvent"> <img src="/image/register.jpg" width="80" height="80"></button>
+      </form>
+
     </div>
 
   </main>
 
-  <script src="js/main.js"></script>
+  <script>
+    
+    const registration = document.querySelector(".registration_area");
+    const registrationSidebar = document.querySelector(".main-sidebar");
+    const menuBtn = document.querySelector(".menu");
+    const registerBtn = document.querySelector(".registerBtn");
+    const signInForm = document.querySelector(".signInForm");
+    const registerForm = document.querySelector(".registerForm")
+
+    function toggleSidebar() {
+      registrationSidebar.classList.toggle('close_toggle');
+      registration.classList.toggle('center');
+    };
+
+    menuBtn.addEventListener('click', toggleSidebar);
+
+    function registerToggel(){
+      signInForm.classList.toggle('close_toggle');
+      registerForm.classList.toggle('close_toggle');
+    }
+
+    registerBtn.addEventListener('click', registerToggel)
+  </script>
 </body>
 </html>

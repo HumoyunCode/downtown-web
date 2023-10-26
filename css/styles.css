@@ -92,7 +92,7 @@ body {
 
 /* toggler function style for side bar menue */
 
-.close_toggle{
+.close__toggle{
   display: none;
 }
 
@@ -211,9 +211,7 @@ body {
   border-left: none;
 }
 
-.sidebar-2{
-  
-}
+
 .sidebar-2 img{
   width: 50px;
 }
@@ -349,45 +347,6 @@ body {
 .main-sidebar h4{
   font-size: 16px;
   color: #d0cece;
-}
-
-.test-area_listening {
-}
-
-.test-area_reading {
-}
-
-.test-area_writing {
-}
-
-.test-area_speaking {
-}
-
-.fa-brands.fa-telegram {
-}
-
-.main-sidebar_reading {
-}
-
-.main-sidebar_listening {
-}
-
-.main-sidebar_writing {
-}
-
-.main-sidebar_speaking {
-}
-
-.main-sidebar-statistic_reading {
-}
-
-.main-sidebar-statistic_listening {
-}
-
-.main-sidebar-statistic_writing {
-}
-
-.main-sidebar-statistic_speaking {
 }
 
 

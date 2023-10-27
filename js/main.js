@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const registrationSidebar = document.querySelector(".main-sidebar");
 
     function toggleSidebar() {
-        sidebar.classList.toggle('close_toggle')
-        sidebarRegistration.classList.toggle('close_toggle')
-        registrationSidebar.classList.toggle('close_toggle')
+        sidebar.classList.toggle('close__toggle')
+        sidebarRegistration.classList.toggle('close__toggle')
+        registrationSidebar.classList.toggle('close__toggle')
     }
 
     menuBtn.addEventListener('click', toggleSidebar);

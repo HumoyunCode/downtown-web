@@ -432,12 +432,16 @@ body {
   padding: 0 1px;
 }
 
-#progress-bar {
+/* listening test done progress bar */
+#progress_bar_listening, 
+#progress_bar_reading,
+#progress_bar_writing,
+#progress_bar_speaking
+{
   height: 90%;
   background-color: #7f7f7f;
   transition: width 0.5s ease; /* Add a smooth transition effect */
   border-radius: 10px;
-  
 }
 
 /* Registration style */

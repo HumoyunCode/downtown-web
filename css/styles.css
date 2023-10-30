@@ -382,11 +382,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   padding-right: 20px;
   /* transition: 1s ease; */
 }
 
+/* listening */
+.listening{
+  opacity: 0;
+}
+
+/* reading */
+.reading{
+  opacity: 0;
+}
+
+/* writing */
+.writing{
+  opacity: 0;
+}
+
+/* speaking */
+.speaking{
+  opacity: 0;
+}
 .tests{
   width: 350px;
   display: flex;
@@ -395,6 +414,8 @@ body {
   list-style: none;
   margin-right: 30px;
 }
+
+.reading
 
 .tests li{
   margin-left: -10px;

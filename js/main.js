@@ -27,23 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
       const width = (completedTests / totalTests) * 100;
       progressBar.style.width = width + "%";
     }
-
     // Example: Update the progress bar when a test is completed
     updateProgressBar(1); // Call this function with the number of completed tests
-
-
-
     const bigDiv = document.querySelector(".card");
-    const moveButton = document.querySelector(".btn");
-    const moveButton1 = document.querySelector(".btn-1");
+    const moveButton = document.querySelector("#btn_listening");
+    // const moveButton1 = document.querySelector("");
     const testArea = document.querySelector(".test_area");
     const imageListeningSources = ['/image/listeningClick.jpg', '/image/listening.jpg'];
-    const imageReadingSources = ['/image/listeningClick.jpg', '/image/listening.jpg'];
-    const imageWritingSources = ['/image/listeningClick.jpg', '/image/listening.jpg'];
-    const imageSpeakingSources = ['/image/listeningClick.jpg', '/image/listening.jpg'];
+    const imageReadingSources = ['/image/readingClick.jpg', '/image/reading.jpg'];
+    const imageWritingSources = ['/image/writingClick.jpg', '/image/writinging.jpg'];
+    const imageSpeakingSources = ['/image/speakingClick.jpg', '/image/speaking.jpg'];
     const buttonImage = document.getElementById('buttonImage');
-
-
+    
     // Variable to track if the div is already moved
     let isMoved = false;
 
@@ -56,8 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Change the display property of the test area to 'flex'
         bigDiv.style.justifyContent = "space-between"
         testArea.style.display = "flex";
+        // bunga transform bilan birga qilinadi opasitiy bilan qilsa ham bo`ladi 
         moveButton.classList.add('btn_clicked');
-        buttonImage.src = imageListeningSources[0];
+         buttonImage.src = imageListeningSources[0];
       } else {
         // Reset the big div position and hide the test area
         moveButton.style.transition = "margin-left 5s";

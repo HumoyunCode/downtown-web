@@ -20,7 +20,7 @@
     <!-- navbar parts -->
     <ul class="side-bar__part">
       <li class="side-bar__icon">
-        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <button class="menu">
           <svg width="50" height="50" viewBox="0 0 100 100">
             <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
             <path class="line line2" d="M 20,50 H 80" />
@@ -127,28 +127,6 @@
 
   </main>
 
-  <script>
-    
-    const registration = document.querySelector(".registration_area");
-    const registrationSidebar = document.querySelector(".main-sidebar");
-    const menuBtn = document.querySelector(".menu");
-    const registerBtn = document.querySelector(".registerBtn");
-    const signInForm = document.querySelector(".signInForm");
-    const registerForm = document.querySelector(".registerForm")
-
-    function toggleSidebar() {
-      registrationSidebar.classList.toggle('close_toggle');
-      registration.classList.toggle('center');
-    };
-
-    menuBtn.addEventListener('click', toggleSidebar);
-
-    function registerToggel(){
-      signInForm.classList.toggle('close_toggle');
-      registerForm.classList.toggle('close_toggle');
-    }
-
-    registerBtn.addEventListener('click', registerToggel)
-  </script>
+ <script src="/js/registration.js"></script>
 </body>
 </html>

@@ -213,81 +213,6 @@ body {
 
 
 
-.sidebar-2 img{
-  width: 50px;
-}
-
-.sidebar-2_menu{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.sidebar-2_menu li{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.registration{
-  text-align: center;
-}
-
-.registration span{
-  font-size: 18px;
-  font-weight: 600;
-  color: #e3e3e3;
-  margin-right: -20px;
-  cursor: pointer;
-}
-
-
-
-.sidebar-2_menu a{
-  font-size: 18px;
-  font-weight: 600;
-  margin-left: 20px;
-  color: #e3e3e3;
-}
-
-
-.main-ielts__section {
-  width: 75%;
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-}
-
-
-.test-area {
-  width: 100%;
-  max-width: 1200px;
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #d0cece;
-  background-color: #ffffff;
-}
-
-.card{
-  width: 100%;
-  max-width: 900px;
-  height: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  border: 1px solid #d0cece;
-  margin: 10px;
-  cursor: pointer;
-}
-
 .main-sidebar__activities {
   width: 100%;
   height: auto;
@@ -343,23 +268,77 @@ body {
   color: #d0cece;
 }
 
-
-.test-area_listening {
+.sidebar-2_menu a{
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+  color: #e3e3e3;
 }
 
-.test-area_reading {
+.sidebar-2 img{
+  width: 50px;
 }
 
-.test-area_writing {
+.sidebar-2_menu{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.test-area_speaking {
+.sidebar-2_menu li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.fa-brands.fa-telegram {
+.registration{
+  text-align: center;
 }
 
-.main-sidebar_reading {
+.registration span{
+  font-size: 18px;
+  font-weight: 600;
+  color: #e3e3e3;
+  margin-right: -20px;
+  cursor: pointer;
+}
+
+/* IELTS sections styles */
+.main-ielts__section {
+  width: 75%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.test-area {
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d0cece;
+  background-color: #ffffff;
+}
+
+.card{
+  width: 100%;
+  max-width: 900px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 20px;
+  border: 1px solid #d0cece;
+  margin: 10px;
+  cursor: pointer;
+  /* background-color: red; */
 }
 
 
@@ -371,10 +350,10 @@ body {
 .btn{
   display: flex;
   align-items: center;
-  width: 280px;
+  width: 250px;
   height: 100%;
   text-indent: 10px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-color: #ffffff;
   border: none;
   overflow: hidden;
@@ -385,6 +364,7 @@ body {
   font-weight: 600;
   color: #7f7f7f;
   font-family: sans-serif;
+  transition: transform 0.5s ease;
 }
 
 .btn_clicked{
@@ -392,25 +372,36 @@ body {
   border-radius: 20px;
   background-color: #7f7f7f;
   color: #ffffff;
+  /* margin: 0 auto; */
+  transform: translateX(-125%);
+  transition: transform 0.5s ease;
 }
 
 .test_area{
-  display: none;
+  width: 350px;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  padding-right: 20px;
+  /* transition: 1s ease; */
 }
 
 .tests{
-  width: 400px;
+  width: 350px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  text-align: center;
+  margin-right: 30px;
+}
+
+.tests li{
+  margin-left: -10px;
 }
 
 #progress-bar-container {
-  width: 95%;
+  width: 90%;
   height: 15px;
   display: flex;
   align-items: center;

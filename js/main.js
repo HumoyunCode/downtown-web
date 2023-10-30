@@ -39,28 +39,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageSpeakingSources = ['/image/speakingClick.jpg', '/image/speaking.jpg'];
     const buttonImage = document.getElementById('buttonImage');
     
+    let currentPosition = 0;
+
     // Variable to track if the div is already moved
     let isMoved = false;
 
     moveButton.addEventListener("click", () => {
       if (!isMoved) {
         // Move the big div to the left slowly
-        moveButton.style.transition = "margin-left 5s easy";
-        moveButton.style.marginLeft = "-20px";
 
         // Change the display property of the test area to 'flex'
-        bigDiv.style.justifyContent = "space-between"
-        testArea.style.display = "flex";
-        // bunga transform bilan birga qilinadi opasitiy bilan qilsa ham bo`ladi 
+        // bigDiv.style.justifyContent = "space-between"
+        // testArea.style.display = "flex";
+        testArea.style.opacity = "1";
+        testArea.style.transition = "1s ease";
+        // // bunga transform bilan birga qilinadi opasitiy bilan qilsa ham bo`ladi 
         moveButton.classList.add('btn_clicked');
          buttonImage.src = imageListeningSources[0];
       } else {
         // Reset the big div position and hide the test area
-        moveButton.style.transition = "margin-left 5s";
-        moveButton.style.marginLeft = "auto";
-        testArea.style.display = "none";
-        bigDiv.style.justifyContent = "center"
+        // moveButton.style.transition = "margin-left 20s";
+        // moveButton.style.marginLeft = "auto";
+        // // testArea.style.display = "none";
+        testArea.style.opacity = "0";
+        // // bigDiv.style.justifyContent = "center"
         moveButton.classList.remove('btn_clicked')
+        testArea.style.transition = ".5s";
         buttonImage.src = imageListeningSources[1];
       }
 

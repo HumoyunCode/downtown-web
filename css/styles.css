@@ -592,7 +592,127 @@ body {
 }
 
 
+/* Listening test style */
 
+.listening-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
+
+.section_test_btns{
+  width: 95%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listening_test_area{
+  width: 95%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 25px auto;
+  background-color: #ffffff;
+  border: 2px solid #d0cece;
+  padding-left: 20px;
+}
+
+.listening_time{
+  width: 80px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #6e6e6e;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f7f7f;
+  font-family: sans-serif;
+  margin-left: 30px;
+}
+
+.listening_test_name{
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 2px;
+  font-family: sans-serif;
+  color: #7f7f7f;
+  margin: auto 0;
+  letter-spacing: 1px;
+}
+
+.test_start{
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* listening test area btns style */
+
+.test_parts{
+  width: 25%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.test_parts li{
+  width: 80px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #7f7f7f;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f7f7f;
+  letter-spacing: .5px;
+}
+
+.test_numbers{
+  width: 35%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.test_numbers li{
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #7f7f7f;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f7f7f;
+  letter-spacing: .5px;
+}
+
+.submit_btn{
+  width: 100px;
+  height: 40px;
+  border: 2px solid #7f7f7f;
+  border: 2px solid #7f7f7f;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f7f7f;
+  letter-spacing: .5px;
+  cursor: pointer;
+}
 .close_toggle{
   display: none;
 }

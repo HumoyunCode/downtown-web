@@ -530,7 +530,7 @@ body {
 
 
 .registerForm{
-  width: 700px;
+  width: 80%;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -547,8 +547,10 @@ body {
   justify-content: space-evenly;
 }
 
-.flex div{
-  text-align: center;
+.wraper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .registerForm input{
@@ -560,6 +562,7 @@ body {
   color: #d0cece;
   outline: none;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .registerTitle{

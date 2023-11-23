@@ -38,19 +38,35 @@
     <!-- Main section it contains all main parts -->
     <main class="main_body">
         <div class="registration_area">
-            <form class="signInForm" name="signInForm">
-               <span>Sign in</span>
-               <p class="error_msg" style="display: none;"></p>
-                <div class="signIn">
-                  <input type="text" name="email" placeholder="Enter your email" required>
-                  <input type="password" name="password" placeholder="Enter your password" required>
-                  <button onclick="SubmitEvent"> <img src="/image/register.png" width="150" height="150"></button>
-                </div>
-                <div class="register_links">
-                    <a href="">Register</a>
-                    <a href="">Forgot your password</a>
-                </div>
-            </form>
+          <form class="registerForm ">
+            <div class="registerTitle">Register</div>
+            <div class="flex">
+              <div class="wraper">
+              <input type="text" placeholder="Enter your name" required>
+              </div>
+
+              <div class="wraper">
+                <input type="text" placeholder="Enter your surname" required>
+              </div>
+    
+              <div class="wraper">
+                <input type="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+    
+            <div class="flex">
+              <div class="wraper">
+              <input type="password" placeholder="Enter your password" required>
+              </div>
+    
+              <div class="wraper">
+              <input type="password" placeholder="Repeat the password" required>
+              </div>
+            </div>
+            
+            <button onclick="SubmitEvent"> <img src="/image/register.png" width="80" height="80"></button>
+            <a href="sigin.html">Sign in</a>
+          </form>
           </div>
     </main>
   <script>

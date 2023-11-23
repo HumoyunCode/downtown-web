@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downtown</title>
+
+  <!-- ICON links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Header section -->
+  <header class="header-main">
+    
+    <!-- navbar parts -->
+    <img class="downtown_image" src="/image/watermark 1downtownImage.png" alt="" width="200" height="120">
+    <!-- navbar contact part -->
+    <ul class="nav-contact__page">
+      <li class="nav-contact__page-author">
+        <img src="/image/profile.png" alt="author image">
+        <span>Sirojiddin Bobokulov</span>
+      </li>
+      <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+    </ul>
+  </header>
+
+    <!-- Main section it contains all main parts -->
+    <main class="main_body">
+        <!--This is ielts section area it contains all ielts sections like listening reading writing and speaking  -->
+        <div class="guest_section">
+            <span>Welcome to Downtown – Your Gateway to World-Class Learning, Tailored for Uzbek Learners! </span>
+            <p>Understanding Your Needs: In Uzbekistan, ambitious learners often face barriers to accessing high-quality education: language barriers, limited local resources, and courses that don't align with your unique cultural and professional landscape. <br>Introducing Downtown: Downtown breaks down these barriers, offering a learning platform designed specifically for you. Our courses are in Uzbek, ensuring no language barrier. We focus on relevant, locally applicable skills and knowledge, bringing global expertise to your doorstep.
+            <br>
+            Why Choose Downtown? 
+            <br>  Localized Content: Courses crafted to meet the specific needs and aspirations of Uzbek learners. Language 
+            <br> No Barrier: All courses are available in Uzbek, making learning effortless and inclusive.
+            <br> Culturally Relevant: Our curriculum resonates with your cultural context, enhancing understanding and applicability.
+            <br> Flexible Learning: Learn at your own pace, anytime, anywhere. Perfect for busy professionals, students, and lifelong learners.
+            <br> Affordable Access: We believe in democratizing education – quality learning at accessible prices. <br> Community Connection: Join a vibrant community of fellow Uzbek learners, share insights, and grow together. Your Journey Awaits! At Downtown, we're more than just a platform – we're a movement. Join us in reshaping the landscape of education in Uzbekistan. Empower yourself with knowledge, skills, and a community that supports your growth. Start your learning journey with Downtown today!</p>
+
+            <div class="guest_buttons">
+                <button class="register_btn" onclick="location.href='sigin.html'">Register</button>
+                <button class="login_btn" onclick="location.href='sigin.html'">Log in</button>
+            </div>
+        </div>
+    </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

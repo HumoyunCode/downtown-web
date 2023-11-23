@@ -19,134 +19,25 @@
   <header class="header-main">
     
     <!-- navbar parts -->
-    <ul class="side-bar__part">
-      <li class="side-bar__icon">
-        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-          <svg width="50" height="50" viewBox="0 0 100 100">
-            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-          </svg>
-        </button>
-      </li>
-
-      <li class="side-bar__name">
-        <span>Downtown</span>
-      </li>
-    </ul>
+    <img class="downtown_image" src="./image/watermark 1downtownImage.png" alt="" width="200" height="120">
     <!-- navbar contact part -->
     <ul class="nav-contact__page">
-      <li class="nav-contact__page-media">
-        
-      </li>
-
       <li class="nav-contact__page-author">
         <img src="./image/profile.png" alt="author image">
         <span>Sirojiddin Bobokulov</span>
       </li>
+      <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
     </ul>
   </header>
 
   <!-- Main section it contains all main parts -->
-  <main class="main-section">
-  <!-- side bar it contains tests  and statistics -->
-    <div class="main-sidebar">
-      <div class="sidebar-1">
-        <div class="main-sidebar__activities">
-          <div class="image_sidebar">
-            <img src="./image/step.png" alt="foot image" width="70" height="70">
-            <span>Recent activities</span>
-          </div>
-          <!-- Practice area this contains more practice tests and scores -->
-          <ul class="main-sidebar__practice">
-            <li>
-              <a href="#" class="main-sidebar_reading"> <h4>Reading Test 1</h4></a>
-              <span>Score: 9.0 / 40</span>
-            </li>
-
-            <li>
-              <a href="#" class="main-sidebar_listening"> <h4>Listening Test 1</h4></a>
-              <span>Score: 9.0 / 40</span>
-            </li>
-
-            <li>
-              <a href="#" class="main-sidebar_writing"> <h4>Writing Test 1</h4></a>
-              <span>Score: 9.0</span>
-            </li>
-
-            <li>
-              <a href="#" class="main-sidebar_speaking"> <h4>Speaking Test 1</h4></a>
-              <span>Score: 9.0</span>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- Side bar statistics section -->
-        <div class="main-sidebar__activities">
-        <div class="image_sidebar">
-          <img src="./image/statistics.png" alt="statistics" width="70" height="70">
-          <span>Statistics</span>
-        </div>
-        <!-- stastics area this contains more statistics of tests -->
-        <ul class="main-sidebar__statistic">
-          <li>
-            <a href="#" class="main-sidebar-statistic_reading"> <h4>Reading Average</h4></a>
-            <span>Score: 9.0</span>
-          </li>
-
-          <li>
-            <a href="#" class="main-sidebar-statistic_listening"> <h4>Listening Average</h4></a>
-            <span>Score: 9.0</span>
-          </li>
-
-          <li>
-            <a href="#" class="main-sidebar-statistic_writing"> <h4>Writing Average</h4></a>
-            <span>Score: 9.0</span>
-          </li>
-
-          <li>
-            <a href="#" class="main-sidebar-statistic_speaking"> <h4>Speaking Average</h4></a>
-            <span>Score: 9.0</span>
-          </li>
-
-        </ul>
-
-        </div>
-      </div>
-      
-      <div class="sidebar-2 close__toggle">
-        <ul class="sidebar-2_menu ">
-          <li>
-            <img src="./image/home.jpg" alt="">
-            <a href="#">Home</a>
-          </li>
-
-          <li>
-            <img src="./image/profile_setings.jpg" alt="">
-            <a href="#">Profile</a>
-          </li>
-
-          <li>
-            <img src="./image/statistics.png" alt="">
-            <a href="#">Statistics</a>
-          </li>
-
-          <li>
-            <img src="./image/blog.jpg" alt="">
-            <a href="#">Blog</a>
-          </li>
-
-          <div class="registration">
-            <a href="./components/registrationForm.html">Sign in</a> 
-            <span>/</span>
-            <a href="./components/registrationForm.html">Register</a>
-          </div>
-        </ul>
-      </div>
-    </div>
-    </div>
-
+<main class="main-section">
     <!--This is ielts section area it contains all ielts sections like listening reading writing and speaking  -->
     <div class="main-ielts__section">
       <div class="test-area">
@@ -235,6 +126,88 @@
         </div>
       </div>
     </div>
+
+
+
+    <!-- side bar it contains tests  and statistics -->
+  <div class="main-sidebar">
+    <div class="sidebar-1">
+      <div class="main-sidebar__activities">
+        <div class="image_sidebar">
+          <img src="./image/step.png" alt="foot image" width="70" height="70">
+          <span class="statistics_name">Recent activities</span>
+        </div>
+        <!-- Practice area this contains more practice tests and scores -->
+        <ul class="main-sidebar__practice">
+          <li>
+            <a href="#" class="main-sidebar_reading"> <h4>Reading test 1</h4></a>
+            <p>Score: 9.0 / 40</p>
+          </li>
+
+          <li>
+            <a href="#" class="main-sidebar_listening"> <h4>Listening test 1</h4></a>
+            <p>Score: 9.0 / 40</p>
+          </li>
+
+          <li>
+            <a href="#" class="main-sidebar_writing"> <h4>Writing test 1</h4></a>
+            <p>Score: 9.0 / 40</p>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Side bar statistics section -->
+      <div class="main-sidebar__activities">
+      <div class="image_sidebar">
+        <img src="./image/statistics.png" alt="statistics" width="70" height="70">
+        <span class="statistics_name">Statistics</span>
+      </div>
+      <!-- stastics area this contains more statistics of tests -->
+      <ul class="main-sidebar__statistic">
+        <li>
+          <a href="#" class="main-sidebar-statistic_reading" style="display: flex;"> <h4>Reading: </h4> <h4>6.5</h4></a>
+        </li>
+
+        <li>
+          <a href="#" class="main-sidebar-statistic_listening" style="display: flex;"> <h4>Listening: </h4> <h4>6.0</h4></a>
+        </li>
+      </ul>
+
+      </div>
+    </div>
+    
+    <div class="sidebar-2 close__toggle">
+      <ul class="sidebar-2_menu ">
+        <li>
+          <img src="./image/home.jpg" alt="">
+          <a href="#">Home</a>
+        </li>
+
+        <li>
+          <img src="./image/profile_setings.jpg" alt="">
+          <a href="#">Profile</a>
+        </li>
+
+        <li>
+          <img src="./image/statistics.png" alt="">
+          <a href="#">Statistics</a>
+        </li>
+
+        <li>
+          <img src="./image/blog.jpg" alt="">
+          <a href="#">Blog</a>
+        </li>
+
+        <div class="registration">
+          <a href="./components/registrationForm.html">Sign in</a> 
+          <span>/</span>
+          <a href="./components/registrationForm.html">Register</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+
   </main>
 
   <script src="js/main.js"></script>

@@ -498,11 +498,40 @@ body {
   font-size: 20px;
 }
 
+
+.password{
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d0cece;
+  border-radius: 20px;
+  text-indent: 2px;
+  padding-right: 5px;
+  overflow: hidden;
+}
+
+.password:hover{
+  border-color: #ffd600;
+}
+
+i{
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#password{
+  width: 280px;
+  height: 48px;
+  border: none;
+}
 .signIn button{
   border: none;
   background-color: #ffffff;
   cursor: pointer;
 }
+
 
 
 .register_links{

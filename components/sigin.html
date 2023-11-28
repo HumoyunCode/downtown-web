@@ -8,7 +8,7 @@
 
   <!-- ICON links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -43,7 +43,11 @@
                <p class="error_msg" style="display: none;"></p>
                 <div class="signIn">
                   <input type="text" name="email" placeholder="Enter your email" required>
-                  <input type="password" name="password" placeholder="Enter your password" required>
+
+                  <div class="password">
+                    <input type="password" required minlength="8" id="password" placeholder="Enter your password"> 
+                    <i class="fa-regular fa-eye-slash"></i>
+                  </div>
                   <button onclick="SubmitEvent"> <img src="/image/register.png" width="150" height="150"></button>
                 </div>
                 <div class="register_links">
@@ -69,6 +73,28 @@
             return false;
         }
     }
+
+    let eyeicon = document.querySelector('.fa-regular')
+    let password = document.getElementById("password")
+    let input = document.querySelector("#password")
+    let minLength = document.querySelector("#show_sign1")
+    let upperCase= document.querySelector("#show_sign2")
+    let lowerCase = document.querySelector("#show_sign3")
+    let numbers = document.querySelector("#show_sign4")
+    let symblos = document.querySelector("#show_sign5")
+
+    eyeicon.addEventListener('click', ()=> {
+        if(password.type == "password") {
+            password.type = "text"
+            eyeicon.classList.add('fa-eye')
+            eyeicon.classList.remove('-slash')
+
+        }else{
+            password.type = "password"
+            eyeicon.classList.add('fa-eye-slash')
+            eyeicon.classList.remove('fa-eye')
+        }
+    })
   </script>
   <script src="js/main.js"></script>
 </body>

@@ -45,10 +45,12 @@
                   <input type="text" name="email" placeholder="Enter your email" required>
 
                   <div class="password">
-                    <input type="password" required minlength="8" id="password" placeholder="Enter your password"> 
+                    <input name="password" type="password" required minlength="8" id="password" placeholder="Enter your password"> 
                     <i class="fa-regular fa-eye-slash"></i>
                   </div>
-                  <button onclick="SubmitEvent"> <img src="/image/register.png" width="150" height="150"></button>
+                  <button onclick="SubmitEvent" id="btnClicked"> 
+                    <img id="imageSrc" src="/image/register.png" width="150" height="150">
+                  </button>
                 </div>
                 <div class="register_links">
                     <a href="register.html">Register</a>
@@ -56,8 +58,13 @@
                 </div>
             </form>
           </div>
+          
     </main>
   <script>
+    const imgSrc = document.getElementById('imageSrc');
+    const btnClicked = document.getElementById('btnClicked');
+    let buttonImage = ['/image/register.png', '/image/registerClick.png'];
+    let isCliked = false
     document.forms['signInForm'].onsubmit = function(event){
         if(this.email.value.trim() === ""){
             document.querySelector(".error_msg").innerHTML = "Please enter your email";
@@ -73,6 +80,16 @@
             return false;
         }
     }
+
+    btnClicked.addEventListener("click", ()=> {
+      if (!isCliked) {
+        imgSrc.src = buttonImage[0];
+      } else {
+        imgSrc.src = buttonImage[1];
+      }
+
+      isCliked = !isCliked;
+    })
 
     let eyeicon = document.querySelector('.fa-regular')
     let password = document.getElementById("password")

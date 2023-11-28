@@ -82,23 +82,19 @@
     }
 
     btnClicked.addEventListener("click", ()=> {
-      if (!isCliked) {
-        imgSrc.src = buttonImage[0];
-      } else {
-        imgSrc.src = buttonImage[1];
-      }
+      // if (!isCliked) {
+      //   imgSrc.src = buttonImage[0];
+      // } else {
+      //   imgSrc.src = buttonImage[1];
+      // }
 
-      isCliked = !isCliked;
+      // isCliked = !isCliked;
+      imgSrc.src = buttonImage[1];
     })
 
     let eyeicon = document.querySelector('.fa-regular')
     let password = document.getElementById("password")
     let input = document.querySelector("#password")
-    let minLength = document.querySelector("#show_sign1")
-    let upperCase= document.querySelector("#show_sign2")
-    let lowerCase = document.querySelector("#show_sign3")
-    let numbers = document.querySelector("#show_sign4")
-    let symblos = document.querySelector("#show_sign5")
 
     eyeicon.addEventListener('click', ()=> {
         if(password.type == "password") {

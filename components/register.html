@@ -40,6 +40,7 @@
         <div class="registration_area">
           <form class="registerForm ">
             <div class="registerTitle">Register</div>
+            <p class="error_msg" style="display: none;"></p>
             <div class="flex">
               <div class="wraper">
               <input type="text" placeholder="Enter your name" required>
@@ -56,7 +57,10 @@
     
             <div class="flex">
               <div class="wraper">
-              <input type="password" placeholder="Enter your password" required>
+              <div class="password_register">
+                <input name="password" type="password" required id="password_register" placeholder="Enter your password"> 
+                <i class="fa-regular fa-eye-slash"></i>
+              </div>
               </div>
     
               <div class="wraper">
@@ -64,27 +68,41 @@
               </div>
             </div>
             
-            <button onclick="SubmitEvent"> <img src="/image/register.png" width="80" height="80"></button>
+            <button id="registerBtn" onclick="SubmitEvent"> <img src="/image/register.png" width="80" height="80"></button>
             <a href="sigin.html">Sign in</a>
           </form>
           </div>
     </main>
   <script>
-    document.forms['signInForm'].onsubmit = function(event){
-        if(this.email.value.trim() === ""){
-            document.querySelector(".error_msg").innerHTML = "Please enter your email";
-            document.querySelector(".error_msg").style.display = "block";
-            this.email.style.borderColor = "red"
-            return false;
-        }
 
-        if(this.password.value.trim() === ""){
-            document.querySelector(".error_msg").innerHTML = "Please enter your password";
-            document.querySelector(".error_msg").style.display = "block";
-            this.password.style.borderColor = "red"
-            return false;
+    let eyeicon = document.querySelector('.fa-regular')
+    let password = document.getElementById("password_register")
+    let input = document.querySelector("#password")
+    eyeicon.addEventListener('click', ()=> {
+        if(password.type == "password") {
+            password.type = "text"
+            eyeicon.classList.add('fa-eye')
+            eyeicon.classList.remove('-slash')
+
+        }else{
+            password.type = "password"
+            eyeicon.classList.add('fa-eye-slash')
+            eyeicon.classList.remove('fa-eye')
         }
-    }
+    })
+
+    const registerBtn = document.querySelector('#registerBtn');
+    const passwordBorder = document.querySelector(".password_register")
+    registerBtn.addEventListener("click",()=>{
+        if(password.value.length < 9){
+            document.querySelector(".error_msg").innerHTML = "Password must have at least 8 letters!";
+            document.querySelector(".error_msg").style.display = "block";
+            passwordBorder.style.borderColor = "red"
+        }else if(password.value.length > 9){
+          document.querySelector(".error_msg").style.display = "none";
+          passwordBorder.style.borderColor = "#7f7f7f"
+        }
+    })
   </script>
   <script src="js/main.js"></script>
 </body>

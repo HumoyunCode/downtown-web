@@ -969,6 +969,20 @@ i{
   color: #fff;
 }
 
+/* reading numbers and passage style when clicked */
+
+#reading_passage2,
+#reading_passage3 {
+  display: none;
+}
+
+#passage2,
+#passage3 {
+  display: none;
+}
+
+
+
 
 
 

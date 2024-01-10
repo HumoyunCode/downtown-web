@@ -124,7 +124,7 @@ body {
 }
 
 .nav-contact__page {
-  width: 20%;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -780,11 +780,11 @@ i{
 }
 
 .test_numbers{
-  width: 35%;
+  width: 47%;
   height: 70%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -821,14 +821,14 @@ i{
 /* reading section style  */
 
 .rading__sidebar{
-  width: 25%;
+  width: 30%;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
 .reading-header{
-  height: 120px;
+  height: 95px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -846,26 +846,18 @@ i{
 }
 
 .reading_test_area{
-  width: 1800px;
-  height: 800px;
+  width: 1400px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
 }
 
-.reading_test_parts{
-  width: 40%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-}
 
 .reading_questions{
-  width: 760px;
-  height: 740px;
+  width: 45%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -873,7 +865,7 @@ i{
 }
 
 .reading_questions::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   height: 700px;
   border: 1px solid #7f7f7f;
   border-radius: 10px;
@@ -887,8 +879,8 @@ i{
 
 
 .reading_answers{
-  width: 760px;
-  height: 740px;
+  width: 45%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -896,7 +888,7 @@ i{
 }
 
 .reading_answers::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   height: 700px;
   border: 1px solid #7f7f7f;
   border-radius: 10px;
@@ -935,8 +927,17 @@ i{
   font-family: sans-serif;
 }
 
+.reading_test_parts{
+  width: 43%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .reading_btns{
-  width: 200px;
+  width: 180px;
   height: 37px;
   border: 1px solid #7f7f7f;
   display: grid;
@@ -952,13 +953,13 @@ i{
 }
 
 .numbers{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: grid;
   place-items: center;
-  border: 2px solid #7f7f7f;
+  border: 1px solid #7f7f7f;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: #7f7f7f;
   letter-spacing: .5px;
